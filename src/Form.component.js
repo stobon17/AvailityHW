@@ -26,13 +26,14 @@ function RegForm(props) {
     };
   
     return (
+      
        <form onSubmit={handleSubmit}>
          <input type="text" placeholder="First Name..." ref={name1} />
          <input type="text" placeholder="Last Name..." ref={name2} />
-         <input type="text" placeholder="NPI Number..." ref={npinum} />
+         <input type="number" placeholder="NPI Number..." ref={npinum} />
          <input type="text" placeholder="Business Address..." ref={bizadd} />
-         <input type="text" placeholder="Telephone Number..." ref={telnum} />
-         <input type="text" placeholder="Email..." ref={email} />
+         <input type="number" placeholder="Telephone Number..." ref={telnum} />
+         <input type="email" placeholder="Email..." ref={email} />
          <button type="submit" className="myButton">Submit</button>
        </form>
      );
